@@ -50,7 +50,7 @@ function runEnter() {
   var inputElement = d3.select("#datetime");
   // Get the value property of the input element
   var inputValue = inputElement.property("value");
-  // Use the form input to filter the data by blood type
+  // Use the form input to filter the data by datetime
   var matches = tableData.filter(function (ufo){
     return ufo.datetime === inputValue;
   });
